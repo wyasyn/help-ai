@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images//img.png" type="image/x-icon" />
     <title>Finance PA Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Roboto", sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,8 +22,6 @@
         background-color: #f5f5f5;
       }
       .chatbot-container {
-        width: 400px;
-        height: 600px;
         border: 2px solid #4caf50;
         border-radius: 10px;
         background-color: #fff;
@@ -32,8 +36,6 @@
         font-size: 20px;
       }
       iframe {
-        width: 100%;
-        height: 100%;
         border: none;
       }
     </style>
@@ -42,10 +44,12 @@
     <div class="chatbot-container">
       <div class="chatbot-header">Finance PA Chatbot</div>
       <iframe
-        height="430"
+        allow="microphone;"
         width="350"
-        src="https://bot.dialogflow.com/259c48dc-8f92-4c61-9fe9-d89fc92cc8c4"
-      ></iframe>
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/259c48dc-8f92-4c61-9fe9-d89fc92cc8c4"
+      >
+      </iframe>
     </div>
   </body>
 </html>
